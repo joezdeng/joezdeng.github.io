@@ -1,3 +1,19 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font:14px Helvetica, Sans-Serif;
+	display:block;
+}
+
+#pageWrap {
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
 aside {
 	float:right;
 	width:10%;
