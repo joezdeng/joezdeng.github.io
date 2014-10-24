@@ -19,12 +19,12 @@ body {
 
 header {
 	text-transform:lowercase;
-	font-family:"Aparatija", Garamond, serif;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 #menuList {
 	display:inline-block;
-	text-decoration:none;
+	list-style-type:none;
 }
 
 aside {
