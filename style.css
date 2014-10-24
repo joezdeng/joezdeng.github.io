@@ -1,13 +1,13 @@
 * {
 	margin:0;
 	padding:0;
-	border:1px dashed #000000;
+	/*border:1px dashed #000000;*/
 }
 
 body {
 	font-size:1em;
 	font-family:"Gill Sans MT"; Calibri, sans-serif;
-	display:block;
+
 }
 
 #pageWrap {
@@ -84,7 +84,7 @@ sidebar {
 
 section {
 	width:80%;
-	background:#d3d3d3;
+	background:#d8d8bf;
 	position:relative;
 	top:6.35em;
 }
@@ -92,7 +92,3 @@ section {
 article {
 	padding:0.5em;
 }
-
-p {
-	padding-top:0em;
-	}
