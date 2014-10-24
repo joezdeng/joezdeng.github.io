@@ -22,9 +22,9 @@ header {
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-#menuList {
+#menuList li {
 	display:inline-block;
-	list-style-type:none;
+	text-decoration:none;
 }
 
 aside {
