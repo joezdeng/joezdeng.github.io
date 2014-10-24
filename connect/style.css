@@ -12,3 +12,24 @@ h1 {
 	text-align:center;
 	margin-top:1em;
 }
+
+section {
+	text-align:center;
+	position:relative;
+	top:2em;
+}
+
+img {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+a {
+	text-decoration:none;
+	color:#ffffff;
+}
+
+a p:hover {
+	text-decoration:underline;
+}
