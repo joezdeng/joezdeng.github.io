@@ -41,16 +41,21 @@ header {
 	margin:0.5em;
 }
 
-#menuList a {
+#menuList a:link {
 	text-decoration:none;
 	color:#000000;
 }
 
-a:hover {
+#menuList a:visited {
+	text-decoration:none;
+	color:#000000;
+}
+
+#menuList a:hover {
 	text-decoration:underline;
 }
 
-a:active {
+#menuList a:active {
 	text-decoration:underline;
 }
 
