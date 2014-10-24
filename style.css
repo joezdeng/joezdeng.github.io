@@ -1,9 +1,6 @@
 * {
 	margin:0;
 	padding:0;
-	border-style:dashed;
-	border-width:1px;
-	border-color:black;
 }
 
 body {
@@ -36,6 +33,10 @@ header {
 
 #menuList li {
 	display:inline-block;
+}
+
+a:hover {
+	text-decoration:underline;
 }
 
 aside {
