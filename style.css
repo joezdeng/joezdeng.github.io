@@ -38,6 +38,10 @@ header {
 	display:inline-block;
 }
 
+#menuList a {
+	text-decoration:none;
+}
+
 a:hover {
 	text-decoration:underline;
 }
