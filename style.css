@@ -36,6 +36,7 @@ header {
 
 #menuList li {
 	display:inline-block;
+	margin:5px;
 }
 
 #menuList a {
