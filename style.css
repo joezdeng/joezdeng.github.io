@@ -16,6 +16,7 @@ body {
 
 header {
 	width:100%;
+	height:100%;
 	float:left;
 	clear:both;
 	text-transform:lowercase;
@@ -30,6 +31,7 @@ header {
 #menuList {
 	list-style-type:none;
 	float:right;
+	vertical-align:bottom;
 }
 
 #menuList li {
