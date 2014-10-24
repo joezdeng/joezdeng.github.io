@@ -17,4 +17,11 @@ body {
 aside {
 	float:right;
 	width:10%;
+	background:;
+}
+
+#profpic {
+	height:10%;
+	width:auto;
+
 }
