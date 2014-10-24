@@ -29,7 +29,6 @@ header {
 #menuList {
 	list-style-type:none;
 	display:inline;
-	float:right;
 }
 
 #menuList li {
