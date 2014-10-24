@@ -22,7 +22,6 @@ header {
 	margin-bottom:20px;
 	text-transform:lowercase;
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-	vertical-align:text-bottom;
 }
 
 #myName {
@@ -32,6 +31,8 @@ header {
 #menuList {
 	list-style-type:none;
 	float:right;
+	position:absolute;
+	bottom:0;
 
 }
 
