@@ -24,12 +24,11 @@ header {
 }
 
 #myName {
-	display:table-cell;
+	display:inline;
 }
 
 #menuList {
 	list-style-type:none;
-	display:table-cell;
 	float:right;
 }
 
