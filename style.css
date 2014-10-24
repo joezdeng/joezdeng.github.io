@@ -38,12 +38,12 @@ header {
 aside {
 	float:right;
 	width:15%;
-	background:;
+	background:#ffe4e1;
 }
 
 #profPic {
 	height:72px;
 	width:72px;
-	margin-left:auto;
-	margin-right:auto;
+/*	margin-left:auto;
+	margin-right:auto;*/
 }
