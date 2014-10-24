@@ -17,13 +17,17 @@ body {
 	margin-right:auto;
 }
 
+header {
+	text-transform:lowercase;
+}
+
 aside {
 	float:right;
 	width:10%;
 	background:;
 }
 
-#profpic {
+#profPic {
 	height:72px;
 	width:72px;
 
