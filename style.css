@@ -4,7 +4,7 @@
 }
 
 body {
-	font:14px Helvetica, Sans-Serif;
+	font:1em Helvetica, Sans-Serif;
 	display:block;
 }
 
@@ -19,7 +19,7 @@ header {
 	height:100%;
 	float:left;
 	clear:both;
-	margin-bottom:20px;
+	margin-bottom:2em;
 	text-transform:lowercase;
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
@@ -31,13 +31,14 @@ header {
 #menuList {
 	list-style-type:none;
 	float:right;
-	position:absolute;
+	position:relative;
+	top:;
 
 }
 
 #menuList li {
 	display:inline-block;
-	margin:5px;
+	margin:0.5em;
 }
 
 #menuList a {
@@ -61,15 +62,15 @@ aside {
 }
 
 #profPic {
-	height:72px;
-	width:72px;
+	height:6em;
+	width:6em;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:5px;
-	margin-bottom:5px;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
 }
 
 #tagline {
-	margin:3px;
+	margin:0.25em;
 }
