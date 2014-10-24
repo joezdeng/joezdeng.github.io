@@ -22,14 +22,22 @@ header {
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
+#myName {
+
+}
+
+#menuList {
+	list-style-type:none;
+	float:right;
+}
+
 #menuList li {
 	display:inline-block;
-	text-decoration:none;
 }
 
 aside {
 	float:right;
-	width:10%;
+	width:15%;
 	background:;
 }
 
