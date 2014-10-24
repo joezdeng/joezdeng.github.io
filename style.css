@@ -32,7 +32,7 @@ header {
 	list-style-type:none;
 	float:right;
 	position:relative;
-	top:0.75em;
+	top:0.7em;
 }
 
 #menuList li {
@@ -45,11 +45,11 @@ header {
 	color:#000000;
 }
 
-body #pageWrap header #menuList a:hover {
+a:hover {
 	text-decoration:underline;
 }
 
-#menuList a:active {
+a:active {
 	text-decoration:underline;
 }
 
