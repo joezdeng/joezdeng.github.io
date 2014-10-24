@@ -23,13 +23,12 @@ header {
 }
 
 #myName {
-	display:inline;
+	display:inline-block;
 }
 
 #menuList {
 	list-style-type:none;
 	display:inline-block;
-	float:right;
 }
 
 #menuList li {
