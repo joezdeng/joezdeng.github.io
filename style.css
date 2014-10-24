@@ -41,7 +41,7 @@ aside {
 	width:15%;
 	background:#e04006;
 	float:right;
-	display:inline;
+	clear:right;
 }
 
 #profPic {
