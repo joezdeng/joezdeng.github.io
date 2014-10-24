@@ -23,17 +23,13 @@ header {
 }
 
 #myName {
-	display:inline-block;
-	float:left;
-	clear:both;
+
 }
 
 #menuList {
 	list-style-type:none;
 	display:inline-block;
 	float:right;
-	clear:both;
-	
 }
 
 #menuList li {
@@ -41,9 +37,10 @@ header {
 }
 
 aside {
-	float:right;
 	width:15%;
 	background:#e04006;
+	float:right;
+	display:inline;
 }
 
 #profPic {
