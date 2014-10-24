@@ -18,7 +18,7 @@ body {
 }
 
 header {
-
+	width:100%;
 	float:left;
 	clear:both;
 	text-transform:lowercase;
@@ -26,13 +26,11 @@ header {
 }
 
 #myName {
-	display:inline-block;
 	float:left;
 }
 
 #menuList {
 	list-style-type:none;
-	display:inline-block;
 	float:right;
 }
 
