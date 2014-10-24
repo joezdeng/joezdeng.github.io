@@ -19,6 +19,12 @@ body {
 
 header {
 	text-transform:lowercase;
+	font-family:"Aparatija", Garamond, serif;
+}
+
+#menuList {
+	display:inline-block;
+	text-decoration:none;
 }
 
 aside {
