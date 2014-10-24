@@ -42,13 +42,14 @@ header {
 
 #menuList a {
 	text-decoration:none;
+	color:#000000;
 }
 
-a:hover {
+#menuList a:hover {
 	text-decoration:underline;
 }
 
-a:active {
+#menuList a:active {
 	text-decoration:underline;
 }
 
