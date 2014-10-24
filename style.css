@@ -29,6 +29,7 @@ header {
 #menuList {
 	list-style-type:none;
 	display:block;
+	float:right;
 }
 
 #menuList li {
