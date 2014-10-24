@@ -25,12 +25,15 @@ header {
 #myName {
 	display:inline-block;
 	float:left;
+	clear:both;
 }
 
 #menuList {
 	list-style-type:none;
 	display:inline-block;
 	float:right;
+	clear:both;
+	
 }
 
 #menuList li {
