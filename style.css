@@ -19,7 +19,6 @@ body {
 
 header {
 	width:100%;
-	float:left;
 	clear:both;
 	text-transform:lowercase;
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
