@@ -19,9 +19,10 @@ header {
 	height:100%;
 	float:left;
 	clear:both;
+	margin-bottom:20px;
 	text-transform:lowercase;
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-	margin-bottom:20px;
+	vertical-align:text-bottom;
 }
 
 #myName {
@@ -31,7 +32,7 @@ header {
 #menuList {
 	list-style-type:none;
 	float:right;
-	vertical-align:bottom;
+
 }
 
 #menuList li {
