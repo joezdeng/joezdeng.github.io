@@ -10,8 +10,25 @@ body {
 
 }
 
+@media screen and (min-width:70em) {
+	#pageWrap {
+		width:60%;
+	}
+}
+
+@media screen and (max-width:70em) {
+	#pageWrap {
+		width:80%;
+	}
+}
+
+@media screen and (max-width:55em) {
+	#pageWrap {
+		width:100%;
+	}
+}
+
 #pageWrap {
-	width:60%;
 	margin-left:auto;
 	margin-right:auto;
 }
