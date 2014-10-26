@@ -21,14 +21,35 @@ header {
 	margin-top:2%;
 	margin-bottom:5%;
 	text-transform:lowercase;
-	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 	position:relative;
+}
+
+h1 {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:2.5em;
+}
+
+#socialMedia {
+	float:right;
+}
+
+header #socialMedia img {
+	height:1.5em;
+	width:auto;
+	display:inline;
+	margin-right:0%;
+}
+
+header #socialMedia img:hover{
+	opacity:0.5;
+	filter:alpha(opacity=50); /* For IE8 and earlier */
 }
 
 nav {
 	/*position:absolute;
 	bottom:13%;
 	right:0%;*/
+	margin-top:0.5em;
 }
 
 #menuList {
@@ -41,7 +62,7 @@ nav {
 
 nav ul li {
 	display:inline;
-	margin:0 3%;
+	padding:0 0.5em;
 }
 
 nav ul a:link {
@@ -55,7 +76,7 @@ nav ul a:visited {
 }
 
 nav ul a:hover {
-	/*border-bottom:2px solid #e04006;*/
+	border-bottom:2px solid #e04006;
 }
 
 nav ul a:active {
