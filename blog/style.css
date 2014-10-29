@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'league_gothicitalic';
-    src: url('leaguegothic-italic-webfont.eot');
-    src: url('leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('leaguegothic-italic-webfont.woff2') format('woff2'),
-         url('leaguegothic-italic-webfont.woff') format('woff'),
-         url('leaguegothic-italic-webfont.ttf') format('truetype'),
-         url('leaguegothic-italic-webfont.svg#league_gothicitalic') format('svg');
+    src: url('type/leaguegothic-italic-webfont.eot');
+    src: url('type/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/leaguegothic-italic-webfont.woff2') format('woff2'),
+         url('type/leaguegothic-italic-webfont.woff') format('woff'),
+         url('type/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('type/leaguegothic-italic-webfont.svg#league_gothicitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -16,12 +16,12 @@
 
 @font-face {
     font-family: 'league_gothicCnRg';
-    src: url('leaguegothic-condensedregular-webfont.eot');
-    src: url('leaguegothic-condensedregular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('leaguegothic-condensedregular-webfont.woff2') format('woff2'),
-         url('leaguegothic-condensedregular-webfont.woff') format('woff'),
-         url('leaguegothic-condensedregular-webfont.ttf') format('truetype'),
-         url('leaguegothic-condensedregular-webfont.svg#league_gothicCnRg') format('svg');
+    src: url('type/leaguegothic-condensedregular-webfont.eot');
+    src: url('type/leaguegothic-condensedregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/leaguegothic-condensedregular-webfont.woff2') format('woff2'),
+         url('type/leaguegothic-condensedregular-webfont.woff') format('woff'),
+         url('type/leaguegothic-condensedregular-webfont.ttf') format('truetype'),
+         url('type/leaguegothic-condensedregular-webfont.svg#league_gothicCnRg') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -32,12 +32,12 @@
 
 @font-face {
     font-family: 'league_gothicregular';
-    src: url('leaguegothic-regular-webfont.eot');
-    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('leaguegothic-regular-webfont.woff2') format('woff2'),
-         url('leaguegothic-regular-webfont.woff') format('woff'),
-         url('leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    src: url('type/leaguegothic-regular-webfont.eot');
+    src: url('type/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('type/leaguegothic-regular-webfont.woff') format('woff'),
+         url('type/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('type/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -48,12 +48,12 @@
 
 @font-face {
     font-family: 'league_gothiccondensed_italic';
-    src: url('leaguegothic-condenseditalic-webfont.eot');
-    src: url('leaguegothic-condenseditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('leaguegothic-condenseditalic-webfont.woff2') format('woff2'),
-         url('leaguegothic-condenseditalic-webfont.woff') format('woff'),
-         url('leaguegothic-condenseditalic-webfont.ttf') format('truetype'),
-         url('leaguegothic-condenseditalic-webfont.svg#league_gothiccondensed_italic') format('svg');
+    src: url('type/leaguegothic-condenseditalic-webfont.eot');
+    src: url('type/leaguegothic-condenseditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/leaguegothic-condenseditalic-webfont.woff2') format('woff2'),
+         url('type/leaguegothic-condenseditalic-webfont.woff') format('woff'),
+         url('type/leaguegothic-condenseditalic-webfont.ttf') format('truetype'),
+         url('type/leaguegothic-condenseditalic-webfont.svg#league_gothiccondensed_italic') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -66,61 +66,75 @@
 }
 
 body {
-    font-family:"leaguegothic-regular", Arial;
+    font-family:"league_gothicregular", Arial;
 }
 
 #pageWrap {
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
+    width:70%;
+    margin-left:2%;
+}
+
+header {
+    position:relative;
+    margin-bottom:2em;
 }
 
 h1 {
-    font-family: "league_gothicCnRg", Arial;
     text-transform:uppercase;
-    font-weight:bold;
-    font-size:5em;
-    float:left;
+    font-size:6em;
 }
 
 ul {
     list-style-type:none;
 }
 
-nav ul {
-    float:right;
+nav {
+    position:absolute;
+    bottom:15%;
+    right:0%;
 }
 
 nav ul li {
     display:inline;
-    text-transform:lowercase;
+    font-family:Helvetica,Arial;
     font-weight:bold;
-}
-
-div {
-    clear:both;
+    text-transform:lowercase;
+    padding:0 0.5em;
+    font-size:1em;
 }
 
 aside {
     float:left;
-    width:18%;
+    width:25%;
 }
 
 aside ul li {
+    font-family:Helvetica,Arial;
     font-weight:bold;
+    padding-bottom:1em;
 }
 
 section {
-    float:left;
+    float:right;
+    width:68%;
 }
 
 h3 {
+    font-family:Helvetica,Arial;
+    font-weight:bold;
     font-size:0.75em;
 }
 
 h2 {
-    font-family: "league_gothicCnRg", Arial;
     text-transform:uppercase;
-    font-weight:bold;
-    font-size:1.75em;
+    font-size:2em;
+    margin-bottom:0.5em;
+}
+
+article {
+    padding-bottom:2em;
+}
+
+article p {
+    font-family:Helvetica,Arial;
 }
