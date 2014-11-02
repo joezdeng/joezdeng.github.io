@@ -5,127 +5,171 @@
 }
 
 @media screen and (min-width:70em) {
-	#pageWrap {
-		width:60%;
-	}
 }
 
 @media screen and (max-width:70em) {
-	#pageWrap {
-		width:80%;
-	}
 }
 
 @media screen and (max-width:55em) {
-	#pageWrap {
-		width:100%;
-	}
 }
 
 body {
 	font-size:1em;
 	font-family:"Gill Sans MT"; Calibri, sans-serif;
-
+	color:#ffffff;
+	background-color:#e04006;
 }
 
 #pageWrap {
+	width:100%;
 	margin-left:auto;
 	margin-right:auto;
+	min-width:310px;
 }
 
 header {
-	width:100%;
-	margin-top:2%;
-	margin-bottom:5%;
-	text-transform:lowercase;
-	position:relative;
+	border-radius:50%;
+	width:30em;
+	height:30em;
+	background-color:rgba(0,0,0,0.4);
+	position:fixed;
+	top:-15em;
+	left:-15em;
+}
+
+#headerContent {
+	position:fixed;
+	top:0.5em;
+	left:1em;
 }
 
 h1 {
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size:2.5em;
+	font-size:3em;
+	text-transform:lowercase;
+}
+
+h3 {
+	font-size:1em;
+	text-transform:uppercase;
+	margin:0.25em 0;
 }
 
 #socialMedia {
-	float:right;
+	margin-top:0.5em;
 }
 
-header #socialMedia img {
+#socialMedia img {
 	height:2em;
 	width:auto;
 	display:inline;
 }
 
-header #socialMedia img:hover{
+#socialMedia img:hover{
 	opacity:0.5;
 	filter:alpha(opacity=50); /* For IE8 and earlier */
 }
 
 nav {
-	position:absolute;
-	bottom:13%;
-	right:0%;
-	margin-top:0.5em;
+	float:right;
+	background-color:rgba(0,0,0,0.4);
+	padding:0.5em;
+	text-transform:lowercase;
+	border-bottom-left-radius:5px;
 }
 
-#menuList {
+nav ul {
 	list-style-type:none;
-	display:inline;
-	/*position:absolute;
-	bottom:13%;
-	right:0%;*/
 }
 
 nav ul li {
 	display:inline;
 	padding:0 0.5em;
-}
+	font-size:1.1em;
+}	
 
 nav ul a:link {
 	text-decoration:none;
-	color:#000000;
+	color:#ffffff;
 }
 
 nav ul a:visited {
 	text-decoration:none;
-	color:#000000;
-}
-
-nav ul a:hover {
-	border-bottom:2px solid #e04006;
-}
-
-nav ul a:active {
-	/*border-bottom:2px solid #e04006;*/
-	color:#e04006;
-}
-
-sidebar {
-	width:15%;
-	background:#e04006;
-	float:right;
-}
-
-#profPic {
-	height:90%;
-	width:90%;
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:5%;
-	margin-bottom:5%;
-}
-
-#tagline {
-	margin:0.5em;
 	color:#ffffff;
 }
 
-section {
-	width:80%;
-	background:#d8d8bf;
+nav ul a:hover {
+	border-bottom:2px solid #ffffff;
 }
 
-article {
-	padding:1%;
+nav ul a:active {
+	border-bottom:2px solid #ffffff;
+}
+
+#clear {
+	clear:both;
+	margin-bottom:2em;
+}
+
+section {
+	padding:1em 0;
+}
+
+h2 {
+	text-align:center;
+	text-transform:lowercase;
+	margin-bottom:0.5em;
+}
+
+.portfolioPiece {
+	border-radius:50%;
+	width:30em;
+	height:30em;
+	background-color:#d8d8bf;
+	display:block;
+	margin:0 auto;
+	position:relative;
+	background-image:url("images/market-card.png");
+	background-repeat:no-repeat;
+	background-position:center top;
+	background-size:100%;
+}
+
+.portfolioPiece p {
+	position:absolute;
+	bottom:0;
+	background-color:rgba(0,0,0,0.4);
+}
+
+#aboutMe {
+	background-color:#ffffff;
+	color:#000000;
+}
+
+#aboutMe p {
+	width:60%;
+	display:block;
+	margin:0 auto;
+	text-align:justify;
+}
+
+#aboutMe img {
+	border-radius:50%;
+	height:20em;
+	width:20em;
+	display:block;
+	margin:1em auto;
+}
+
+#contact {
+	text-align:center;
+}
+
+#contact a {
+	text-decoration:none;
+	color:#ffffff;
+}
+
+#contact a:hover {
+	text-decoration:underline;
 }
