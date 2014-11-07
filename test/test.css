@@ -1,4 +1,7 @@
-
+  .selected {
+    font-weight:bold;
+  }
+  
   p#cf7_controls {
     text-align:center;
   }
