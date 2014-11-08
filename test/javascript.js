@@ -1,3 +1,7 @@
+// Javascript document
+
+ $(document).ready(
+    function(){
       $("#cf7_controls").on("click", "span", function(){
         $("#cf7 img").removeClass("opaque");
 
@@ -8,3 +12,4 @@
         $("#cf7_controls span").removeClass("selected");
         $(this).addClass("selected");
     });
+  });

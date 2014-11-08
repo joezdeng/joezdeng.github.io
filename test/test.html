@@ -3,8 +3,23 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html" />
 	<link href="test.css" rel="Stylesheet" type="text/css" />
-	<script type="text/javascript" scr="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" scr="javascript.js"></script>
+	<script type="text/javascript" src="test/jquery-1.11.1.js"></script>
+  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+	<script>
+ $(document).ready(
+    function(){
+      $("#cf7_controls").on("click", "span", function(){
+        $("#cf7 img").removeClass("opaque");
+
+        var newImage = $(this).index();
+
+        $("#cf7 img").eq(newImage).addClass("opaque");
+
+        $("#cf7_controls span").removeClass("selected");
+        $(this).addClass("selected");
+    });
+  });
+  </script>
 	<title>Joe Deng</title>
 </head>
 
