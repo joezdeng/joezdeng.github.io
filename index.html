@@ -3,34 +3,48 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="style.css" rel="Stylesheet" type="text/css" />
-	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="javascript.js"></script>
+	<script type="text/javascript" src="jquery-1.11.1.js"></script>
+	<!--<script type="text/javascript" src="javascript.js"></script>-->
 	<title>Joe Deng</title>
 </head>
 
 <body>
+	<script>
+	$(document).ready(function(){
+  		$("#pC_controls").on("click", "span", function(){
+      		$("#pC article").removeClass("opaque");
+	       	var newImage = $(this).index();
+        	$("#pC article").eq(newImage).addClass("opaque");
+        	$("#pC_controls span").removeClass("selected");
+    	   	$(this).addClass("selected");
+    	});
+  	});
+	</script>
 
 	<div id="pageWrap">
 
 	<header>
-		<div id="headerContent">
-			<h1>Joe Deng.</h1>
-			<h3>Designer</h3>
-			<div id="socialMedia">
-				<a href="https://www.linkedin.com/in/joezdeng"><img src="images\linkedin.png" alt="LinkedIn logo" /></a>
-				<a href="https://twitter.com/joezdeng"><img src="images\twitter.png" alt="Twitter logo" /></a>
+		<div id="headerContainer">
+			<div id="headerContent">
+				<h1>Joe Deng.</h1>
+				<h3>Designer</h3>
+				<div id="socialMedia">
+					<a href="https://www.linkedin.com/in/joezdeng"><img src="images\linkedin.png" alt="LinkedIn logo" /></a>
+					<a href="https://twitter.com/joezdeng"><img src="images\twitter.png" alt="Twitter logo" /></a>
+				</div>
 			</div>
 		</div>
+		
+		<nav>
+			<ul>
+				<a href="#"><li>Home</li></a>
+				<a href="#portfolio"><li>Portfolio</li></a>
+				<a href="#aboutMe"><li>About Me</li></a>
+				<a href="#contact"><li>Contact</li></a>
+			</ul>
+		</nav>
 	</header>
 
-	<nav>
-		<ul>
-			<a href="#"><li>Home</li></a>
-			<a href="#portfolio"><li>Portfolio</li></a>
-			<a href="#aboutMe"><li>About Me</li></a>
-			<a href="#contact"><li>Contact</li></a>
-		</ul>
-	</nav>
 
 	<div id="clear"></div>
 	
@@ -73,7 +87,7 @@
 					<image src="images\feinberg-icon.png" alt-text="Feinberg IT request help screenshot" />
 				</div>
 				<div class="portfolioText">
-					<h3>Feinberg IT</h3>
+					<h3>Feinberg School of Medicine IT</h3>
 					<p>Icon Design</p>
 				</div>
 			</article>
