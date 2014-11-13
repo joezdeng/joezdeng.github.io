@@ -1,12 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="style.css" rel="Stylesheet" type="text/css" />
-<title>Joe Deng</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="style.css" rel="Stylesheet" type="text/css" />
+	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+	<title>Joe Deng</title>
 </head>
 
 <body>
+
 	<div id="pageWrap">
 
 	<header>
@@ -23,9 +26,9 @@
 	<nav>
 		<ul>
 			<a href="#"><li>Home</li></a>
-			<a href="#"><li>Portfolio</li></a>
-			<a href="#"><li>About Me</li></a>
-			<a href="contact"><li>Contact</li></a>
+			<a href="#portfolio"><li>Portfolio</li></a>
+			<a href="#aboutMe"><li>About Me</li></a>
+			<a href="#contact"><li>Contact</li></a>
 		</ul>
 	</nav>
 
@@ -33,9 +36,69 @@
 	
 	<section id="portfolio">
 		<h2>Portfolio.</h2>
-		<article class="portfolioPiece">
-			<p class="portfolioText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu turpis nibh. Sed ornare viverra porttitor. Suspendisse vehicula vestibulum elit vel tincidunt. Sed et tristique arcu. Donec eu turpis eget velit hendrerit luctus id vel sem. Nam ac aliquam tortor, sit amet semper ligula.</p>
-		</article>
+
+		<div id="pC">
+			<article class="opaque">
+				<div class="portfolioPiece">
+					<image src="images\uni.png" alt-text="uni logo over city skyline" />
+				</div>
+				<div class="portfolioText">
+					<h3>Home Energy Unit</h3>
+					<p>User Insights, Wireframing, Logo Design</p>
+				</div>
+			</article>
+
+			<article>
+				<div class="portfolioPiece">
+					<image src="images\nu-logo.png" alt-text="Northwestern University logo" />
+				</div>
+				<div class="portfolioText">
+					<h3>Northwestern University Evanston Health Service</h3>
+					<p>Design for Accessibility, User Testing</p>
+				</div>
+			</article>
+
+			<article>
+				<div class="portfolioPiece">
+					<image id="marketCard" src="images\market-card.png" alt-text="map of Southeast Asia with flight paths to Taipei" />
+				</div>
+				<div class="portfolioText">
+					<h3>Jiu-Fen-Er Mountain</h3>
+					<p>Marketing Content</p>
+				</div>
+			</article>
+
+			<article>
+				<div class="portfolioPiece">
+					<image src="images\feinberg-icon.png" alt-text="Feinberg IT request help screenshot" />
+				</div>
+				<div class="portfolioText">
+					<h3>Feinberg IT</h3>
+					<p>Icon Design</p>
+				</div>
+			</article>
+
+			<article>
+				<div class="portfolioPiece">
+					<image src="images\baja-site.png" alt-text="Northwestern University Baja SAE site redesign screenshot" />
+				</div>
+				<div class="portfolioText">
+					<h3>Northwestern University Baja SAE</h3>
+					<p>Site Design</p>
+				</div>
+			</article>
+		</div>
+
+		<div id="controls">
+			<p id="pC_controls">
+				<span class="selected"><input checked type="radio" name="slider" id="slide1" /><label for="slide1"></label></span>
+				<span><input type="radio" name="slider" id="slide2" /><label for="slide2"></label></span>
+				<span><input type="radio" name="slider" id="slide3" /><label for="slide3"></label></span>
+				<span><input type="radio" name="slider" id="slide4" /><label for="slide4"></label></span>
+				<span><input type="radio" name="slider" id="slide5" /><label for="slide5"></label></span>
+			</p>
+		</div>
+
 	</section>
 
 	<section id="aboutMe">
@@ -45,7 +108,7 @@
 			<p>UX designer/researcher pivoting from a background in Psychology research and IT. I am in the Product and Design track at the Startup Institute to sharpen the skills to design and manage creative products. On top of that, I am getting a good feel for how to work effectively in a Startup environment.
 			<br />
 			<br />
-			I graduated from Northwestern University with a degree in Psychology but also have an  extensive background in information technology, film production, and furniture design/construction. By continually honing an eye for aesthetics, I hope to apply my observations and experiences to define the way we interact with the digital and physical worlds. I am particularly drawn to the field of healthcare by its limitless potential for improving quality of life and its pressing need for disruption and user-centered innovation.</p>
+			I graduated from Northwestern University with a degree in Psychology but also have an  extensive background in information technology, film production, and furniture design/construction. By continually honing anand experiences to define the way we interact with the digita eye for aesthetics, I hope to apply my observations l and physical worlds. I am particularly drawn to the field of healthcare by its limitless potential for improving quality of life and its pressing need for disruption and user-centered innovation.</p>
 		</article>
 	</section>
 
