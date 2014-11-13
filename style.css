@@ -4,7 +4,7 @@
 	/*border:1px dashed #000000;*/
 }
 
-@media screen and (min-width:1120px) {
+@media screen and (min-width:70em) {
 	#headerContainer {
 		border-radius:50%;
 		width:30em;
@@ -28,7 +28,7 @@
 	}
 }
 
-@media screen and (max-width:1120px) {
+@media screen and (max-width:70em) {
 	header {
 		background-color:rgba(0,0,0,0.4);
 		width:100%;
