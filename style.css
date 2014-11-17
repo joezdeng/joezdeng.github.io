@@ -4,58 +4,90 @@
 	/*border:1px dashed #000000;*/
 }
 
-@media screen and (min-width:70em) {
+@media screen and (min-width:960px) {
 	#headerContainer {
 		border-radius:50%;
-		width:30em;
-		height:30em;
+		width:50em;
+		height:50em;
 		background-color:rgba(0,0,0,0.4);
 		position:fixed;
-		top:-18em;
-		left:-13em;
+		top:-33em;
+		left:-21em;
 	}
 
 	#headerContent {
 		position:fixed;
-		top:0.5em;
-		left:1em;
+		top:0.75em;
+		left:1.5em;
 	}
 
 	nav {
 		float:right;
 		background-color:rgba(0,0,0,0.4);
-		padding:0.5em;
+		padding:0.75em;
 	}
 }
 
-@media screen and (max-width:70em) {
+@media screen and (max-width:960px) and (min-width:640px) {
 	header {
 		background-color:rgba(0,0,0,0.4);
 		width:100%;
 	}
 
 	#headerContent{
-		padding:0.5em 1em;
+		padding:0.75em 1em;
+	}
+
+	#headerContent h3 {
+		display:inline;
+		margin-right:3em;
+		position:relative;
+		top:-1.2em;
+	}
+
+	#socialMedia{
+		display:inline-block;
+
 	}
 
 	nav {
 		position:absolute;
-		top:1.5em;
+		top:2.25em;
 		right:0em;
-	}
-
-	#socialMedia{
-		position:absolute;
-		top:3.5em;
-		right:1em;
 	}
 }
 
-@media screen and (max-width:45em) {
+@media screen and (max-width:640px) {
+	header {
+		background-color:rgba(0,0,0,0.4);
+		width:100%;
+	}
+
+	#headerContent{
+		padding:0.75em 0em;
+	}
+
+	#headerContainer {
+		display:block;
+		margin:0 auto;
+		text-align:center;
+	}
+
+	#socialMedia {
+		display:block;
+		margin:0 auto;
+	}
+
+	nav {
+		display:block;
+		margin:1em auto;
+		padding:0.5em;
+		text-align:center;
+	}
 }
 
 body {
-	font-size:1em;
+	font-size:10px;
 	font-family:"Gill Sans MT", Calibri, sans-serif;
 	color:#ffffff;
 	background-color:#e04006;
@@ -68,22 +100,22 @@ body {
 
 h1 {
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size:3em;
+	font-size:5em;
 	text-transform:lowercase;
 }
 
 h3 {
-	font-size:1em;
+	font-size:1.5em;
 	text-transform:uppercase;
-	margin:0.25em 0;
+	margin:0.4em 0;
 }
 
 #socialMedia {
-	margin-top:0.5em;
+	margin-top:0.75em;
 }
 
 #socialMedia img {
-	height:2em;
+	height:3em;
 	width:auto;
 	display:inline;
 }
@@ -104,8 +136,8 @@ nav ul {
 
 nav ul li {
 	display:inline;
-	padding:0 0.5em;
-	font-size:1.1em;
+	padding:0 0.75em;
+	font-size:1.8em;
 }	
 
 nav ul a:link, nav ul a:visited {
@@ -119,17 +151,18 @@ nav ul a:hover, nav ul a:active {
 
 #clear {
 	clear:both;
-	margin-bottom:2em;
+	margin-bottom:3em;
 }
 
 section {
-	padding:1em 0 3em 0;
+	padding:1.5em 0 5em 0;
 }
 
 h2 {
+	font-size:3em;
 	text-align:center;
 	text-transform:lowercase;
-	margin-bottom:0.5em;
+	margin-bottom:0.75em;
 }
 
 #portfolio {
@@ -138,8 +171,8 @@ h2 {
 
 #pC {
 	position:relative;
-	width:35em;
-	height:33em;
+	width:40em;
+	height:55em;
 	display:block;
 	margin:0 auto;
 }
@@ -163,26 +196,24 @@ h2 {
 
 .portfolioPiece {
 	border-radius:50%;
-	max-width:25em;
-	max-height:25em;
+	max-width:40em;
+	max-height:40em;
 	overflow:hidden;
 	position:absolute;
-	left:5em;
 }
 
 .portfolioText {
 	background-color:rgba(0,0,0,0.5);
-	padding:0.5em;
+	margin-top:1em;
+	padding:0.75em;
 	text-align:left;
+	max-width:40em;
 	position:absolute;
-	bottom:-31em;
-	left:5em;
-	max-width:25em;
+	top:41em;
 }
 
-#marketCard {
-	position:relative;
-	right:8em;
+p {
+	font-size:1.6em;
 }
 
 input {
@@ -192,32 +223,23 @@ input {
 #pC_controls span {
 	cursor:pointer;
 	margin:0 1em;
-	padding:0.4em 0.95em;
-	width:1em;
-	height:1em;
+	padding:0.5em 1.1em;
 	border-radius:50%;
-	background:#999999;
+	border:0.25em #383838 solid;
 	-webkit-transform: translateZ(0);
 	-webkit-transition: opacity 0.2s ease-out;
 	-moz-transition: opacity 0.2s ease-out;
 	-o-transition: opacity 0.2s ease-out;
 	transition: opacity 0.2s ease-out;
-}
-
-#pC_controls span:hover,#pC_controls span.selected:hover {
-	opacity:0.8;
-}
-
-#pC_controls span.selected {
-	background: #383838;
-}
-
-#pC_controls span {
 	-webkit-transform: translateZ(0);
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
+}
+
+#pC_controls span:hover, #pC_controls span.selected:hover, #pC_controls span.selected {
+	background: #383838;
 }
 
 #aboutMe {
@@ -226,7 +248,7 @@ input {
 }
 
 #aboutMe p {
-	width:30%	;
+	width:20em;
 	display:block;
 	margin:0 auto;
 	text-align:justify;
@@ -234,10 +256,10 @@ input {
 
 #aboutMe img {
 	border-radius:50%;
-	height:20em;
-	width:20em;
+	height:30em;
+	width:30em;
 	display:block;
-	margin:1em auto;
+	margin:1.5em auto;
 }
 
 #contact {

@@ -2,24 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link href="style.css" rel="Stylesheet" type="text/css" />
-	<script type="text/javascript" src="jquery-1.11.1.js"></script>
-	<!--<script type="text/javascript" src="javascript.js"></script>-->
+	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
 	<title>Joe Deng</title>
 </head>
 
 <body>
-	<script>
-	$(document).ready(function(){
-  		$("#pC_controls").on("click", "span", function(){
-      		$("#pC article").removeClass("opaque");
-	       	var newImage = $(this).index();
-        	$("#pC article").eq(newImage).addClass("opaque");
-        	$("#pC_controls span").removeClass("selected");
-    	   	$(this).addClass("selected");
-    	});
-  	});
-	</script>
 
 	<div id="pageWrap">
 
@@ -54,7 +44,7 @@
 		<div id="pC">
 			<article class="opaque">
 				<div class="portfolioPiece">
-					<image src="images\uni.png" alt-text="uni logo over city skyline" />
+					<img src="images\uni.png" alt-text="uni logo over city skyline" />
 				</div>
 				<div class="portfolioText">
 					<h3>Home Energy Unit</h3>
@@ -64,7 +54,7 @@
 
 			<article>
 				<div class="portfolioPiece">
-					<image src="images\nu-logo.png" alt-text="Northwestern University logo" />
+					<img src="images\nu-logo.png" alt-text="Northwestern University logo" />
 				</div>
 				<div class="portfolioText">
 					<h3>Northwestern University Evanston Health Service</h3>
@@ -74,7 +64,7 @@
 
 			<article>
 				<div class="portfolioPiece">
-					<image id="marketCard" src="images\market-card.png" alt-text="map of Southeast Asia with flight paths to Taipei" />
+					<img src="images\market-card.png" alt-text="map of Southeast Asia with flight paths to Taipei" />
 				</div>
 				<div class="portfolioText">
 					<h3>Jiu-Fen-Er Mountain</h3>
@@ -84,7 +74,7 @@
 
 			<article>
 				<div class="portfolioPiece">
-					<image src="images\feinberg-icon.png" alt-text="Feinberg IT request help screenshot" />
+					<img src="images\feinberg-icon.png" alt-text="Feinberg IT request help screenshot" />
 				</div>
 				<div class="portfolioText">
 					<h3>Feinberg School of Medicine IT</h3>
@@ -94,7 +84,7 @@
 
 			<article>
 				<div class="portfolioPiece">
-					<image src="images\baja-site.png" alt-text="Northwestern University Baja SAE site redesign screenshot" />
+					<img src="images\baja-site.png" alt-text="Northwestern University Baja SAE site redesign screenshot" />
 				</div>
 				<div class="portfolioText">
 					<h3>Northwestern University Baja SAE</h3>
@@ -119,10 +109,10 @@
 		<h2>About Me.</h2>
 		<img src="images\prof.jpg" alt="Joe Deng looks behind his shoulder"/>
 		<article>
-			<p>UX designer/researcher pivoting from a background in Psychology research and IT. I am in the Product and Design track at the Startup Institute to sharpen the skills to design and manage creative products. On top of that, I am getting a good feel for how to work effectively in a Startup environment.
+			<p>UX designer/researcher pivoting from a background in Psychology research and IT. I am in the Product and Design track at the Startup Institute to sharpen the skills necessary to work effectively in a Startup environment.
 			<br />
 			<br />
-			I graduated from Northwestern University with a degree in Psychology but also have an  extensive background in information technology, film production, and furniture design/construction. By continually honing anand experiences to define the way we interact with the digita eye for aesthetics, I hope to apply my observations l and physical worlds. I am particularly drawn to the field of healthcare by its limitless potential for improving quality of life and its pressing need for disruption and user-centered innovation.</p>
+			By continually honing an eye for aesthetics, I hope to apply my observations and experiences to define the way we interact with the digital and physical worlds. I am particularly drawn to the field of healthcare by its limitless potential for improving quality of life and its pressing need for disruption and innovation that emphasizes the users.</p>
 		</article>
 	</section>
 
