@@ -57,7 +57,7 @@
 	}
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:640px) and (min-width:400px) {
 	header {
 		background-color:rgba(0,0,0,0.4);
 		width:100%;
@@ -80,9 +80,60 @@
 
 	nav {
 		display:block;
-		margin:1em auto;
+		margin:0.5em auto;
 		padding:0.5em;
 		text-align:center;
+	}
+
+	nav ul li {
+		display:block !important;
+		margin:1em;
+	}
+}
+
+@media screen and (max-width:400px) {
+	header {
+		background-color:rgba(0,0,0,0.4);
+		width:100%;
+	}
+
+	#headerContent{
+		padding:0.75em 0em;
+	}
+
+	#headerContainer {
+		display:block;
+		margin:0 auto;
+		text-align:center;
+	}
+
+	#socialMedia {
+		display:block;
+		margin:0 auto;
+	}
+
+	nav {
+		display:block;
+		margin:0.5em auto;
+		padding:0.5em;
+		text-align:center;
+	}
+
+	nav ul li {
+		display:block !important;
+		margin:1em;
+	}
+
+	#pC {
+		width:100%;
+	}
+
+	.portfolioPiece {
+		border-radius:0 !important;
+	}
+
+	#aboutMe p {
+		width:90%;
 	}
 }
 
@@ -171,7 +222,7 @@ h2 {
 
 #pC {
 	position:relative;
-	width:40em;
+	max-width:40em;
 	height:55em;
 	display:block;
 	margin:0 auto;
@@ -202,6 +253,11 @@ h2 {
 	position:absolute;
 }
 
+.portfolioPiece img {
+	max-width:100%;
+	height:auto;
+}
+
 .portfolioText {
 	background-color:rgba(0,0,0,0.5);
 	margin-top:1em;
@@ -222,7 +278,7 @@ input {
 
 #pC_controls span {
 	cursor:pointer;
-	margin:0 1em;
+	margin:0 1%;
 	padding:0.5em 1.1em;
 	border-radius:50%;
 	border:0.25em #383838 solid;
@@ -248,7 +304,7 @@ input {
 }
 
 #aboutMe p {
-	width:20em;
+	max-width:20em;
 	display:block;
 	margin:0 auto;
 	text-align:justify;
