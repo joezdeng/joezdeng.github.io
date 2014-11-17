@@ -13,3 +13,24 @@
         $(this).addClass("selected");
     });
   });
+
+ $(document).ready( function(){
+	
+	$('nav ul a').click( function(e){
+		e.preventDefault();
+
+		var link = $(this).attr('href');
+		console.log(link);
+
+		var height = $(link).offset().top;
+		console.log(height);
+
+		var time = height/2
+
+		$('html,body').animate({
+			scrollTop: height
+		}, time);
+
+	});
+
+});

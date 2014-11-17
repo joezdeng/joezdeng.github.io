@@ -41,6 +41,7 @@
 	#headerContent h3 {
 		display:inline;
 		margin-right:3em;
+		margin-bottom:0;
 		position:relative;
 		top:-1.2em;
 	}
@@ -158,7 +159,7 @@ h1 {
 h3 {
 	font-size:1.5em;
 	text-transform:uppercase;
-	margin:0.4em 0;
+	margin-top:0.4em;
 }
 
 #socialMedia {
@@ -202,7 +203,7 @@ nav ul a:hover, nav ul a:active {
 
 #clear {
 	clear:both;
-	margin-bottom:3em;
+	margin-bottom:1em;
 }
 
 section {
@@ -213,7 +214,7 @@ h2 {
 	font-size:3em;
 	text-align:center;
 	text-transform:lowercase;
-	margin-bottom:0.75em;
+	margin:0.75em;
 }
 
 #portfolio {
@@ -223,7 +224,7 @@ h2 {
 #pC {
 	position:relative;
 	max-width:40em;
-	height:55em;
+	height:63em;
 	display:block;
 	margin:0 auto;
 }
@@ -243,6 +244,7 @@ h2 {
 	opacity:1 !important;
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   	filter: alpha(opacity=1) !important;
+  	z-index:1;
 }
 
 .portfolioPiece {
@@ -268,8 +270,26 @@ h2 {
 	top:41em;
 }
 
+.portfolioText p:nth-child(2) {
+	font-style:italic;
+	margin-bottom:0.5em;
+}
+
 p {
-	font-size:1.6em;
+	font-size:1.5em;
+}
+
+.portfolioText p a {
+	cursor:pointer;
+	font-weight:bold;
+	color:#50A6C2; /*Lake Michigan*/
+	text-decoration:none;
+	display:none;
+}
+
+.portfolioText p a:hover {
+	cursor:pointer;
+	text-decoration:underline;
 }
 
 input {
