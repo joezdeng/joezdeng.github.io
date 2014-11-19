@@ -26,6 +26,10 @@
 		background-color:rgba(0,0,0,0.4);
 		padding:0.75em;
 	}
+
+	.portFull {
+		width:60%;
+	}
 }
 
 @media screen and (max-width:960px) and (min-width:640px) {
@@ -56,6 +60,10 @@
 		top:2.25em;
 		right:0em;
 	}
+
+	.portFull {
+		width:80%;
+	}	
 }
 
 @media screen and (max-width:640px) and (min-width:400px) {
@@ -83,12 +91,16 @@
 		display:block;
 		margin:0.5em auto;
 		padding:0.5em;
-		text-align:center;
+		text-align:center !important;
 	}
 
 	nav ul li {
 		display:block !important;
 		margin:1em;
+	}
+
+	.portFull {
+		width:100%;
 	}
 }
 
@@ -117,7 +129,7 @@
 		display:block;
 		margin:0.5em auto;
 		padding:0.5em;
-		text-align:center;
+		text-align:center !important;
 	}
 
 	nav ul li {
@@ -135,6 +147,10 @@
 
 	#aboutMe p {
 		width:90%;
+	}
+
+	.portFull {
+		width:100%;
 	}
 }
 
@@ -180,10 +196,13 @@ h3 {
 nav {
 	text-transform:lowercase;
 	border-bottom-left-radius:5px;
+	text-align:right;
+	max-width:45em;
 }
 
 nav ul {
 	list-style-type:none;
+	padding:0.5em;
 }
 
 nav ul li {
@@ -208,11 +227,11 @@ nav ul a:hover, nav ul a:active {
 
 section {
 	padding:1.5em 0 5em 0;
+	text-align:center;
 }
 
 h2 {
 	font-size:3em;
-	text-align:center;
 	text-transform:lowercase;
 	margin:0.75em;
 }
@@ -318,7 +337,7 @@ input {
 	background: #383838;
 }
 
-#aboutMe {
+#aboutMe, #forms, #icon {
 	background-color:#ffffff;
 	color:#000000;
 }
@@ -349,4 +368,61 @@ input {
 
 #contact a:hover {
 	text-decoration:underline;
+}
+
+/*start /portfolio*/
+
+.portFull {
+	text-align:center;
+	display:block;
+	margin:0 auto;
+}
+
+.portFull img {
+	display:inline-block;
+	max-width:100%;
+}
+
+.halfImg {
+	display:inline-block;
+	width:45%;
+	height:auto;
+	vertical-align:middle;
+}
+
+#uniLogo {
+	max-width:30em;
+	height:auto;
+}
+
+.portText {
+	padding:1em;
+	text-align:left;
+	display:inline-block;
+	background-color:rgba(0,0,0,0.5);
+	width:45%;
+	max-width:30em;
+	min-width:;
+	vertical-align:middle;
+	color:#ffffff;
+}
+
+#NUlogo {
+	max-width:40em;
+	height:auto;
+}
+
+.portText p a {
+	cursor:pointer;
+	text-decoration:underline;
+	color:#ffffff;
+}
+
+#FSMicon {
+	max-width:30em;
+	height:auto;
+}
+
+#baja article img {
+	margin:1em;
 }
