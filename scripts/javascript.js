@@ -25,7 +25,7 @@
 		var height = $(link).offset().top;
 		console.log(height);
 
-		var time = height/2
+		var time = (height/3)
 
 		$('html,body').animate({
 			scrollTop: height
@@ -33,4 +33,20 @@
 
 	});
 
+});
+
+$(document).ready( function(){
+	$('#prev').click(function() {
+		$('#panes').animate(
+			{right: "170px"}
+		)
+	});
+});
+
+$(document).ready( function(){
+	$('#next').click(function() {
+		$('#panes').animate(
+			{left: "170px"}
+		)
+	});
 });

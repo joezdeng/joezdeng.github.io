@@ -11,8 +11,8 @@
 		height:50em;
 		background-color:rgba(0,0,0,0.4);
 		position:fixed;
-		top:-33em;
-		left:-21em;
+		top:-31em;
+		left:-22em;
 	}
 
 	#headerContent {
@@ -29,6 +29,10 @@
 
 	.portFull {
 		width:60%;
+	}
+
+	#portNav {
+		position:fixed !important;
 	}
 }
 
@@ -336,7 +340,7 @@ input {
 	background: #383838;
 }
 
-#aboutMe, #forms, #icon {
+#aboutMe, #links, #jfnr, #baja {
 	background-color:#ffffff;
 	color:#000000;
 }
@@ -380,13 +384,16 @@ input {
 .portFull img {
 	display:inline-block;
 	max-width:100%;
+	margin-bottom:3em;
 }
 
 .halfImg {
 	display:inline-block;
 	width:45%;
+	max-width:30em;
 	height:auto;
 	vertical-align:middle;
+	margin-bottom:1em;
 }
 
 #uniLogo {
@@ -394,16 +401,74 @@ input {
 	height:auto;
 }
 
-.portText {
+.portText, .portText-half {
+	margin:1em;
 	padding:1em;
 	text-align:left;
 	display:inline-block;
 	background-color:rgba(0,0,0,0.5);
+	vertical-align:middle;
+	color:#ffffff;
+}
+
+.portText {
+	width:80%;
+	max-width:58em;
+	min-width:;
+}
+
+.portText-half {
 	width:45%;
 	max-width:30em;
 	min-width:;
-	vertical-align:middle;
+}
+
+.portText p, .portText-half p {
+	margin-bottom:0.5em;
+}
+
+.portText h3, .portText-half h3 {
+	margin-top:0.6em;
+}
+
+.portText p a, .portText-half p a {
+	cursor:pointer;
+	text-decoration:underline;
 	color:#ffffff;
+}
+
+.OBscreen {
+	float:left;
+	margin:5px;
+	margin-bottom:0 !important;
+}
+
+#carousel {
+	position:relative;
+	overflow:hidden;
+	width:100%;
+}
+
+#panes {
+	width:2040px;
+	overflow:hidden;
+}
+
+#carouselNav {
+	display:block;
+	margin:1em auto 3em auto;
+}
+
+#carouselNav img {
+	height:3em;
+	margin:1em;
+}
+
+.mobileScreen {
+	display:inline-block;
+	width:auto;
+	max-height:40em;
+	vertical-align:middle;
 }
 
 #NUlogo {
@@ -411,17 +476,7 @@ input {
 	height:auto;
 }
 
-.portText p a {
-	cursor:pointer;
-	text-decoration:underline;
-	color:#ffffff;
-}
-
 #FSMicon {
 	max-width:30em;
 	height:auto;
-}
-
-#baja article img {
-	margin:1em;
 }
