@@ -1,28 +1,27 @@
 // Javascript document
 
- $(document).ready(
-    function(){
-      $("#pC_controls").on("click", "span", function(){
-        $("#pC article").removeClass("opaque");
+var inClick = false;
 
-        var newImage = $(this).index();
+$(document).ready(function(){
+	$("#pC_controls").on("click", "span", function(){
+    	$("#pC article").removeClass("opaque");
 
-        $("#pC article").eq(newImage).addClass("opaque");
+		var newImage = $(this).index();
 
-        $("#pC_controls span").removeClass("selected");
-        $(this).addClass("selected");
-    });
-  });
+		$("#pC article").eq(newImage).addClass("opaque");
 
- $(document).ready( function(){
-	
+		$("#pC_controls span").removeClass("selected");
+		$(this).addClass("selected");
+	});
+
+
 	$('nav ul a').click( function(e){
 		e.preventDefault();
 
 		var link = $(this).attr('href');
 		console.log(link);
 
-		var height = $(link).offset().top;
+		var height = $(link).position().top;
 		console.log(height);
 
 		var time = (height/3)
@@ -33,20 +32,39 @@
 
 	});
 
-});
-
-$(document).ready( function(){
+	
 	$('#prev').click(function() {
-		$('#panes').animate(
-			{right: "170px"}
-		)
-	});
-});
+		if(inClick) return;
 
-$(document).ready( function(){
-	$('#next').click(function() {
-		$('#panes').animate(
-			{left: "170px"}
-		)
+		inClick = true;
+
+		if ($('#panes').position().left < 0) {
+
+			$('#panes').animate({left: "+=340"}, 250, function() {
+				inClick = false;
+			});
+
+		}
+
+		else inClick = false;
+
 	});
+
+	$('#next').click(function() {
+		if(inClick) return;
+
+		inClick = true;
+
+		if ($('#panes').position().left > -1700) {
+
+			$('#panes').animate({left: "-=340"}, 250, function() {
+				inClick = false;
+			});
+
+		}
+
+		else(inClick) = false;
+
+	});
+
 });

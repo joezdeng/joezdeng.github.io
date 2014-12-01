@@ -36,7 +36,7 @@
 	}
 }
 
-@media screen and (max-width:960px) and (min-width:640px) {
+@media screen and (max-width:960px) and (min-width:600px) {
 	header {
 		background-color:rgba(0,0,0,0.4);
 		width:100%;
@@ -46,23 +46,22 @@
 		padding:0.75em 1em;
 	}
 
-	#headerContent h3 {
-		display:inline;
-		margin-right:3em;
-		margin-bottom:0;
-		position:relative;
-		top:-1.2em;
+	#headerContainer {
+		display:block;
+		margin:0 auto;
+		text-align:center;
 	}
 
-	#socialMedia{
-		display:inline-block;
-
+	#socialMedia {
+		display:block;
+		margin:0 auto;
 	}
 
 	nav {
-		position:absolute;
-		top:2.25em;
-		right:0em;
+		display:block;
+		margin:0.5em auto;
+		padding:0.5em;
+		text-align:center !important;
 	}
 
 	.portFull {
@@ -70,7 +69,7 @@
 	}	
 }
 
-@media screen and (max-width:640px) and (min-width:400px) {
+@media screen and (max-width:600px) and (min-width:400px) {
 	header {
 		background-color:rgba(0,0,0,0.4);
 		width:100%;
@@ -378,13 +377,12 @@ input {
 .portFull {
 	text-align:center;
 	display:block;
-	margin:0 auto;
+	margin:1.5em auto;
 }
 
-.portFull img {
-	display:inline-block;
+.fullImg {
 	max-width:100%;
-	margin-bottom:3em;
+	margin:0.5em 0;
 }
 
 .halfImg {
@@ -437,6 +435,19 @@ input {
 	color:#ffffff;
 }
 
+.portText > ul > li{
+	list-style-type:none;
+	font-size:1.5em;
+	margin-top:0.25em;
+	margin-left:0.25em;
+}
+
+.portText ul ul {
+	font-size:1.5em;
+	margin:0 0 0.5em 1em;
+	list-style-type:none;
+}
+
 .OBscreen {
 	float:left;
 	margin:5px;
@@ -452,6 +463,7 @@ input {
 #panes {
 	width:2040px;
 	overflow:hidden;
+	position:relative;
 }
 
 #carouselNav {
@@ -462,6 +474,10 @@ input {
 #carouselNav img {
 	height:3em;
 	margin:1em;
+}
+
+#prev, #next {
+	cursor:pointer;
 }
 
 .mobileScreen {
