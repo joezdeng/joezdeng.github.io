@@ -1,7 +1,7 @@
 * {
 	margin:0;
 	padding:0;
-	/*border:1px dashed #000000;*/
+	/*border:1px dashed #000;*/
 }
 
 @media screen and (min-width:960px) {
@@ -159,14 +159,20 @@
 
 body {
 	font-size:10px;
-	font-family:"Gill Sans MT", Calibri, sans-serif;
-	color:#ffffff;
+	font-family:"Josefin Sans", Calibri, sans-serif;
+	color:#fff;
 	background-color:#e04006;
 }
 
 #pageWrap {
 	width:100%;
 	min-width:310px;
+}
+
+a {
+	text-decoration:none;
+	color:#fff;
+	cursor:pointer;
 }
 
 h1 {
@@ -176,8 +182,12 @@ h1 {
 }
 
 h3 {
-	font-size:1.5em;
+	font-size:2em;
 	text-transform:uppercase;
+}
+
+#myTitle {
+	font-size:1.5em;
 	margin-top:0.4em;
 }
 
@@ -209,18 +219,19 @@ nav ul {
 }
 
 nav ul li {
+	font-family:"Copse", serif;
 	display:inline;
 	padding:0 0.75em;
-	font-size:1.8em;
+	font-size:1.5em;
 }	
 
 nav ul a:link, nav ul a:visited {
 	text-decoration:none;
-	color:#ffffff;
+	color:#fff;
 }
 
 nav ul a:hover, nav ul a:active {
-	border-bottom:2px solid #ffffff;
+	border-bottom:2px solid #fff;
 }
 
 #clear {
@@ -234,6 +245,7 @@ section {
 }
 
 h2 {
+	font-family:"Copse", serif;
 	font-size:3em;
 	text-transform:lowercase;
 	margin:0.75em;
@@ -246,9 +258,10 @@ h2 {
 #pC {
 	position:relative;
 	max-width:40em;
-	height:63em;
+	height:70em;
 	display:block;
 	margin:0 auto;
+	text-align:center;
 }
 
 #pC article {
@@ -285,7 +298,7 @@ h2 {
 .portfolioText {
 	background-color:rgba(0,0,0,0.5);
 	margin-top:1em;
-	padding:0.75em;
+	padding:1.5em;
 	text-align:left;
 	max-width:40em;
 	position:absolute;
@@ -294,22 +307,21 @@ h2 {
 
 .portfolioText p:nth-child(2) {
 	font-style:italic;
-	margin-bottom:0.5em;
-}
-
-p {
+	margin-bottom:1em;
 	font-size:1.5em;
 }
 
+p {
+	font-size:1.75em;
+	line-height:125%;
+}
+
 .portfolioText p a {
-	cursor:pointer;
 	font-weight:bold;
 	color:#50A6C2; /*Lake Michigan*/
-	text-decoration:none;
 }
 
 .portfolioText p a:hover {
-	cursor:pointer;
 	text-decoration:underline;
 }
 
@@ -340,8 +352,8 @@ input {
 }
 
 #aboutMe, #links, #jfnr, #baja {
-	background-color:#ffffff;
-	color:#000000;
+	background-color:#fff;
+	color:#000;
 }
 
 #aboutMe p {
@@ -361,11 +373,6 @@ input {
 
 #contact {
 	text-align:center;
-}
-
-#contact a {
-	text-decoration:none;
-	color:#ffffff;
 }
 
 #contact a:hover {
@@ -401,17 +408,17 @@ input {
 
 .portText, .portText-half {
 	margin:1em;
-	padding:1em;
+	padding:2em 3em;
 	text-align:left;
 	display:inline-block;
 	background-color:rgba(0,0,0,0.5);
 	vertical-align:middle;
-	color:#ffffff;
+	color:#fff;
 }
 
 .portText {
 	width:80%;
-	max-width:58em;
+	max-width:60em;
 	min-width:;
 }
 
@@ -422,22 +429,12 @@ input {
 }
 
 .portText p, .portText-half p {
-	margin-bottom:0.5em;
-}
-
-.portText h3, .portText-half h3 {
-	margin-top:0.6em;
-}
-
-.portText p a, .portText-half p a {
-	cursor:pointer;
-	text-decoration:underline;
-	color:#ffffff;
+	margin-bottom:0.75em;
 }
 
 .portText > ul > li{
 	list-style-type:none;
-	font-size:1.5em;
+	font-size:1.75em;
 	margin-top:0.25em;
 	margin-left:0.25em;
 }
@@ -490,6 +487,12 @@ input {
 #NUlogo {
 	max-width:40em;
 	height:auto;
+	border-radius:50%;
+}
+
+#iconMedley, #iconSS {
+	border-radius:50%;
+	margin:0 1em;
 }
 
 #FSMicon {
