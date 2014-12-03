@@ -26,6 +26,8 @@
 		top:0;
 		right:0;
 		padding:0.75em;
+		border-bottom-left-radius:5px;
+		width:45em;
 	}
 
 	#menuButton {
@@ -66,9 +68,20 @@
 
 	#homeNav {
 		display:block;
-		margin:0.5em auto;
+		margin:0em auto;
 		padding:0.5em;
 		text-align:center !important;
+		width:100%;
+	}
+
+	#menuButton {
+		position:absolute;
+		top:14.6em;
+	}
+
+	#menuList {
+		position:absolute;
+		top:18.1em;
 	}
 
 	.portFull {
@@ -98,14 +111,25 @@
 
 	#homeNav {
 		display:block;
-		margin:0.5em auto;
+		margin:0em auto;
 		padding:0.5em;
 		text-align:center !important;
+		width:100%;
 	}
 
 	#homeNav ul li {
 		display:block !important;
 		margin:1em;
+	}
+
+	#menuButton {
+		position:absolute;
+		top:14.6em;
+	}
+
+	#menuList {
+		position:absolute;
+		top:18.1em;
 	}
 
 	.portFull {
@@ -135,9 +159,10 @@
 
 	#homeNav {
 		display:block;
-		margin:0.5em auto;
+		margin:0em auto;
 		padding:0.5em;
 		text-align:center !important;
+		width:100%;
 	}
 
 	#homeNav ul li {
@@ -155,6 +180,16 @@
 
 	#aboutMe p {
 		width:90%;
+	}
+
+	#menuButton {
+		position:absolute;
+		top:14.6em;
+	}
+
+	#menuList {
+		position:absolute;
+		top:18.1em;
 	}
 
 	.portFull {
@@ -217,9 +252,7 @@ h3 {
 
 #homeNav {
 	text-transform:lowercase;
-	border-bottom-left-radius:5px;
 	text-align:right;
-	max-width:45em;
 	background-color:rgba(0,0,0,0.4);
 }
 
@@ -242,11 +275,6 @@ nav ul a:link, nav ul a:visited {
 
 nav ul a:hover, nav ul a:active {
 	border-bottom:2px solid #fff;
-}
-
-#clear {
-	clear:both;
-	margin-bottom:1em;
 }
 
 section {
@@ -479,13 +507,13 @@ input {
 .portText {
 	width:80%;
 	max-width:60em;
-	min-width:;
+	min-width:30em;
 }
 
 .portText-half {
 	width:45%;
 	max-width:30em;
-	min-width:;
+	min-width:30em;
 }
 
 .portText p, .portText-half p {
@@ -552,7 +580,7 @@ input {
 
 #iconMedley, #iconSS {
 	border-radius:50%;
-	margin:0 1em;
+	margin:1em;
 }
 
 #FSMicon {

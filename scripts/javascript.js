@@ -3,6 +3,7 @@
 var inClick = false;
 
 $(document).ready(function(){
+	//fade carousel
 	$("#pC_controls").on("click", "span", function(){
     	$("#pC article").removeClass("opaque");
 
@@ -15,6 +16,7 @@ $(document).ready(function(){
 	});
 
 
+	//nav menu autoscroll
 	$('#homeNav a, #hbMenu ol a').click( function(e){
 		e.preventDefault();
 
@@ -33,6 +35,8 @@ $(document).ready(function(){
 	});
 
 	
+
+	//click carousel
 	$('#prev').click(function() {
 		if(inClick) return;
 
@@ -68,6 +72,7 @@ $(document).ready(function(){
 	});
 
 
+	//hamburger menu
     $('#menuButton').click(function () {
         $('#menuList').toggleClass('hidden');
 
@@ -93,7 +98,6 @@ $(document).ready(function(){
     			$('#menuList').css({position: "fixed", top: "3.5em"});
     		
     		} else {
-    			console.log ('working');
     			$('#menuButton').css({position: "absolute", top: "14.6em"});
 
     			$('#menuList').css({position: "absolute", top: "18.1em"});
