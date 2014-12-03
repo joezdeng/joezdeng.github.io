@@ -21,24 +21,31 @@
 		left:1.5em;
 	}
 
-	nav {
-		float:right;
-		background-color:rgba(0,0,0,0.4);
+	#homeNav {
+		position:fixed;
+		top:0;
+		right:0;
 		padding:0.75em;
+	}
+
+	#menuButton {
+		position:fixed;
+		top:0;
+	}
+
+	#menuList {
+		position:fixed;
+		top:3.5em;
 	}
 
 	.portFull {
 		width:60%;
 	}
 
-	#portNav {
-		position:fixed !important;
-	}
 }
 
 @media screen and (max-width:960px) and (min-width:600px) {
 	header {
-		background-color:rgba(0,0,0,0.4);
 		width:100%;
 	}
 
@@ -57,7 +64,7 @@
 		margin:0 auto;
 	}
 
-	nav {
+	#homeNav {
 		display:block;
 		margin:0.5em auto;
 		padding:0.5em;
@@ -71,7 +78,6 @@
 
 @media screen and (max-width:600px) and (min-width:400px) {
 	header {
-		background-color:rgba(0,0,0,0.4);
 		width:100%;
 	}
 
@@ -90,14 +96,14 @@
 		margin:0 auto;
 	}
 
-	nav {
+	#homeNav {
 		display:block;
 		margin:0.5em auto;
 		padding:0.5em;
 		text-align:center !important;
 	}
 
-	nav ul li {
+	#homeNav ul li {
 		display:block !important;
 		margin:1em;
 	}
@@ -109,7 +115,6 @@
 
 @media screen and (max-width:400px) {
 	header {
-		background-color:rgba(0,0,0,0.4);
 		width:100%;
 	}
 
@@ -128,14 +133,14 @@
 		margin:0 auto;
 	}
 
-	nav {
+	#homeNav {
 		display:block;
 		margin:0.5em auto;
 		padding:0.5em;
 		text-align:center !important;
 	}
 
-	nav ul li {
+	#homeNav ul li {
 		display:block !important;
 		margin:1em;
 	}
@@ -186,6 +191,10 @@ h3 {
 	text-transform:uppercase;
 }
 
+#headerContainer {
+	background-color:rgba(0,0,0,0.4);
+}
+
 #myTitle {
 	font-size:1.5em;
 	margin-top:0.4em;
@@ -206,19 +215,20 @@ h3 {
 	filter:alpha(opacity=50); /* For IE8 and earlier */
 }
 
-nav {
+#homeNav {
 	text-transform:lowercase;
 	border-bottom-left-radius:5px;
 	text-align:right;
 	max-width:45em;
+	background-color:rgba(0,0,0,0.4);
 }
 
-nav ul {
+#homeNav ul {
 	list-style-type:none;
 	padding:0.5em;
 }
 
-nav ul li {
+#homeNav ul li {
 	font-family:"Copse", serif;
 	display:inline;
 	padding:0 0.75em;
@@ -380,6 +390,56 @@ input {
 }
 
 /*start /portfolio*/
+
+#menuButton {
+	background-color:rgba(0,0,0,0.8);
+	cursor:pointer;
+	right:0;
+	height:3.5em;
+	width:5em;
+}
+
+#menuButton span {
+	display:block;
+	width:3em;
+	height:0.3em;
+	margin:0.6em 1em;
+	background-color:#fff;
+}
+
+.buttonInactive {
+	background-color:rgba(0,0,0,0.4) !important;
+}
+
+#menuList {
+	background-color:rgba(0,0,0,0.4);
+	right:0;
+}
+
+#menuList li {
+	display:block;
+	font-size:1.5em;
+	font-family:"Copse", serif;
+	padding:0.5em 1em;
+}
+
+#menuList li:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+#homeLink {
+	text-transform:uppercase;
+	margin-bottom:1em;
+
+}
+
+#menuList ol li {
+	text-transform:lowercase;
+}
+
+.hidden {
+	display:none !important;
+}
 
 .portFull {
 	text-align:center;
